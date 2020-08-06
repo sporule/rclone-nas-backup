@@ -1,0 +1,18 @@
+version: "2.4"
+
+services:
+  rsync-node:
+    image: bde9fce62ca4
+    container_name: rsync-node
+    environment:
+      - SOURCE=/backup
+      - TARGET=/target
+      - SERVER=/192.168.50.1
+      - USERNAME=hello
+      - PASSWORD=hello
+    networks:
+      - clusterb
+
+networks:
+  clusterb:
+    name: clusterb
