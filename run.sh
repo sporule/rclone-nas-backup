@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PASSWORD = `rclone obscure $PASSWORD`
+PASSWORD=`rclone obscure $PASSWORD`
 
 
 
